@@ -1,0 +1,157 @@
+/* setting the padding and margin to zero*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* styling the website Name  */
+.websiteName {
+    font-family: 'Frank Ruhl Libre', serif;
+    margin-top: 4px;
+    margin-left: 40%;
+    font-size: 25px;
+    color: black;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+/* useful when we are floating items*/
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+}
+
+
+
+.clearfix::after {
+    clear: both;
+}
+
+nav {
+    height: 3em;
+
+}
+
+/* instead of using "ul, li" I'm using all the classes to avoid confusion
+    later when I use any kind of list*/
+.nav, .home, .business, .drop_down_menu, .stores, .beautySalons, .food, .restaurant, .bars, .church, .EriChurch, .EthioChurch {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+.nav {
+    background: #D5973C;
+    height: 2em;
+    width: 100%;
+}
+.drop_down_menu {
+    height: 2em;
+    width: 100%;
+}
+
+/* instead of using "li" I'm using all the classes to avoid confusion
+    later when I use list any kind of list*/
+/*li*/
+.home, .business, .stores, .beautySalons, .food, .restaurant, .bars, .church, .EriChurch, .EthioChurch {
+    position: relative;
+}
+/*li a*/
+.home a, .business a, .stores a, .beautySalons a, .food a, .restaurant a, .bars a, .church a, .EriChurch a, .EthioChurch a {
+    display: block;
+    line-height: 2em;
+    padding: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+
+/* adding a hover effect on the navigation taps */
+.nav li:hover > a {
+    background: #E6E3D4;
+    color: black;
+    height: 2em;
+    position: relative;
+}
+
+/*dropdown menu styles, hidding it*/
+ul.drop_down_menu {
+    z-index: 999; /* making the drop menu appere on top of contens below the navigation bar*/
+    float: none;
+    background: #E6E3D4;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 32px;
+    left: -9000em;
+    max-height: 0; /*hidding the drop down menu*/
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    -ms-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+}
+
+ul.drop_down_menu li {
+    float: none;
+}
+
+/*displaying the submenus when the user hover on the taps*/
+.nav li:hover ul {
+    left: 0;
+    max-height: 10em;
+}
+
+/*styling the submenus or the drop down menus on display*/
+ul.drop_down_menu li a {
+    border-bottom: 1px solid white;
+    padding: .2em 1em;
+    white-space: nowrap;
+    color: black;
+}
+
+/* for every drop down menu the last one will not have border botton*/
+ul.drop_down_menu li:last-child a {
+    border-bottom: none;
+}
+
+/* adding hover effect on the drop down menus*/
+ul.drop_down_menu li a:hover {
+    background: #f1eded;
+    height: 2em;
+    padding-top: .2em;
+}
+
+/*styling for the bottom copyright information*/
+footer {
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 2em;
+    clear: both;
+}
+
+/* styling  About Us and Contact taps*/
+.aboutUs, .contact {
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: black;
+    background: yellowgreen;
+}
+
+/* Adding hover effect to About Us and Contact taps*/
+.aboutUs:hover , .contact:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+/*adding space between p and div containing about us and contact*/
+footer p {
+    padding: 1em;
+}
+
+
+.page {
+    font-size: 30px;
+    margin-bottom: 5em;
+}

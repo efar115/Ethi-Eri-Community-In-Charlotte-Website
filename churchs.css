@@ -1,0 +1,57 @@
+/* setting the padding and margin to zero*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #f1eded;
+}
+
+body {
+    font:  "Times New Roman";
+    line-height: 1.4;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* useful when we are floating items*/
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+main {
+    background: white;
+}
+
+h3:hover {
+    color: blue;
+    position: relative;
+}
+.church_map1 {
+    float: right;
+    position: relative;
+    bottom: 45em;
+    margin-right: 2%;
+}
+
+.church_map2 {
+    float: right;
+    position: relative;
+    bottom: 33em;
+    margin-right: 2%;
+}
+

@@ -1,0 +1,80 @@
+/* setting the padding and margin to zero*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #f1eded;
+}
+
+body {
+    font:  "Times New Roman";
+    line-height: 1.4;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* useful when we are floating items*/
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+/* styling the list of restaurants */
+.list_of_restaurants {
+    float: left;
+    clear: both;
+    width: 50%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+}
+
+/* adding a background to the page contests */
+main {
+    background: white;
+}
+
+/* floating the map to the right  */
+.restaurants_map {
+    float: right;
+}
+
+/* styling the restaurants name  */
+.name {
+    color: rgb(180, 111, 46);
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 -.3em;
+}
+
+
+
+/*adding hover effects restaurant names*/
+.name:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.hours {
+    margin-left: 4em;
+    margin-top: -1.2em;
+}
+
+h3:hover {
+    color: blue;
+}
+

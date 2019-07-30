@@ -1,0 +1,26 @@
+{"Churchs":[
+	{
+		"name":"St. Michael Eritrean Orthodox Church ",
+		"address":"8812 Robinson Church Rd, Charlotte, NC 28215",
+		"phone":"980-202-9789"
+	},
+	{
+		"name":"St. Thomas Aquinas Church ",
+		"address":"1400 Suther Rd, Charlotte, NC 28213",
+		"phone":"(704) 549-1607"
+	},
+	{
+		"name":"Eritrean Catholic Charlotte",
+		"address":"3016 Providence Rd, Charlotte, NC 28211",
+		"phone":"(704) 458-3866"
+	},
+	{
+		"name":"Nativity of the Holy Virgin Orthodox Church",
+		"address":"1700 Mineral Springs Rd, Charlotte, NC 28262",
+		"phone":"(704) 596-8252"
+	},
+	{
+		"name":"St. Giorgis Eritrean Orthodox Tewahdo Church",
+		"address":"4421 Monroe Rd, Charlotte, NC 28205",
+		"phone":"--"}
+]}
